@@ -1,16 +1,18 @@
-<!-- wp:group {"tagName":"header","style":{"spacing":{"padding":{"top":"20px","bottom":"20px","left":"30px","right":"30px"}}},"backgroundColor":"cream","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-<header class="wp-block-group has-cream-background-color has-background" style="padding-top:20px;padding-right:30px;padding-bottom:20px;padding-left:30px">
-	<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-	<div class="wp-block-group">
-		<!-- wp:site-title {"style":{"typography":{"fontWeight":"700"}},"textColor":"guava","fontSize":"large"} /-->
+<!-- wp:group {"tagName":"header","style":{"spacing":{"padding":{"top":"20px","bottom":"20px","left":"30px","right":"30px"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<header class="wp-block-group has-base-background-color has-background" style="padding-top:20px;padding-right:30px;padding-bottom:20px;padding-left:30px">
+	<!-- wp:group {"className":"site-header-inner","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group site-header-inner">
+		<!-- wp:paragraph {"className":"site-logo-text","style":{"typography":{"fontSize":"1.3rem","fontWeight":"700"}},"fontFamily":"heading","textColor":"guava"} -->
+		<p class="site-logo-text has-guava-color has-text-color has-heading-font-family" style="font-size:1.3rem;font-weight:700">Dulce Vida Bakery</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:navigation {"overlayMenu":"mobile","textColor":"contrast","overlayTextColor":"base","overlayBackgroundColor":"espresso","layout":{"type":"flex","justifyContent":"right"}} -->
+		<!-- wp:navigation-link {"label":"Home","url":"/"} /-->
+		<!-- wp:navigation-link {"label":"Menu","url":"/menu/"} /-->
+		<!-- wp:navigation-link {"label":"About","url":"/about/"} /-->
+		<!-- wp:navigation-link {"label":"Contact","url":"/contact/"} /-->
+		<!-- /wp:navigation -->
 	</div>
 	<!-- /wp:group -->
-
-	<!-- wp:navigation {"textColor":"cafe","overlayBackgroundColor":"cream","layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap"},"style":{"typography":{"fontWeight":"600"}}} -->
-	<!-- wp:navigation-link {"label":"Home","url":"/","type":"custom"} /-->
-	<!-- wp:navigation-link {"label":"Menu","url":"/menu/","type":"custom"} /-->
-	<!-- wp:navigation-link {"label":"About","url":"/about/","type":"custom"} /-->
-	<!-- wp:navigation-link {"label":"Contact","url":"/contact/","type":"custom"} /-->
-	<!-- /wp:navigation -->
 </header>
 <!-- /wp:group -->

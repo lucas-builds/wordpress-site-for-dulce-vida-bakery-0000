@@ -1,22 +1,21 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","bottom":"60px","left":"30px","right":"30px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:60px;padding-right:30px;padding-bottom:60px;padding-left:30px">
-
-	<!-- wp:heading {"level":1,"fontSize":"x-large","textColor":"guava"} -->
-	<h1 class="wp-block-heading has-guava-color has-text-color has-x-large-font-size">From the Bakery</h1>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"50px","bottom":"60px","left":"30px","right":"30px"}}},"backgroundColor":"cream","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-cream-background-color has-background" style="padding-top:50px;padding-right:30px;padding-bottom:60px;padding-left:30px">
+	<!-- wp:heading {"level":1,"fontFamily":"heading"} -->
+	<h1 class="wp-block-heading has-heading-font-family">From the Bakery</h1>
 	<!-- /wp:heading -->
 
-	<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"layout":{"type":"default"}} -->
-	<div class="wp-block-query">
+	<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"style":{"spacing":{"margin":{"top":"30px"}}}} -->
+	<div class="wp-block-query" style="margin-top:30px">
 		<!-- wp:post-template -->
-		<!-- wp:group {"className":"dv-menu-item","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group dv-menu-item">
-			<!-- wp:post-title {"level":2,"fontSize":"medium","textColor":"cafe"} /-->
-			<!-- wp:post-date {"fontSize":"small"} /-->
-			<!-- wp:post-excerpt /-->
-		</div>
-		<!-- /wp:group -->
+			<!-- wp:group {"className":"menu-item-card","backgroundColor":"base","style":{"spacing":{"margin":{"bottom":"20px"}}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group menu-item-card has-base-background-color has-background" style="margin-bottom:20px">
+				<!-- wp:post-title {"level":2,"fontFamily":"heading","isLink":true} /-->
+				<!-- wp:post-date {"fontSize":"small"} /-->
+				<!-- wp:post-excerpt /-->
+			</div>
+			<!-- /wp:group -->
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-pagination -->
@@ -26,7 +25,6 @@
 		<!-- /wp:query-pagination -->
 	</div>
 	<!-- /wp:query -->
-
 </div>
 <!-- /wp:group -->
 
