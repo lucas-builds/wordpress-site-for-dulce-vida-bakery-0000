@@ -1,0 +1,104 @@
+/*
+Theme Name: Dulce Vida Bakery
+Description: A warm, family-style block theme for Dulce Vida Bakery, a Cuban bakery in Little Havana, Miami, built for showcasing pastries and celebration cakes and driving calls and visits.
+Version: 1.0.0
+Requires at least: 6.6
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wordpress-site-for-dulce-vida-bakery-0000
+*/
+
+/* ---- Layout helpers ---- */
+.wp-block-group,
+.wp-block-columns {
+	overflow-wrap: anywhere;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ---- Hero ---- */
+.dv-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.dv-hero .wp-block-buttons {
+	flex-wrap: wrap;
+}
+
+/* ---- Badge / pill shapes ---- */
+.dv-badge {
+	display: inline-block;
+	padding: 0.4em 1em;
+	border-radius: 999px;
+	font-family: var(--wp--preset--font-family--body);
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+/* ---- Cards ---- */
+.dv-card {
+	border-radius: 18px;
+	padding: 1.75rem;
+	height: 100%;
+}
+
+.dv-card-list {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* ---- Menu page items ---- */
+.dv-menu-item {
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.dv-menu-item:last-child {
+	border-bottom: none;
+}
+
+/* ---- Decorative divider ---- */
+.dv-divider {
+	height: 6px;
+	border-radius: 999px;
+	max-width: 120px;
+	margin: 1.5rem auto;
+}
+
+/* ---- Contact details ---- */
+.dv-contact-block {
+	border-radius: 18px;
+	padding: 2rem;
+}
+
+.dv-tap-target {
+	min-height: 44px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ---- Responsive stacking ---- */
+@media (max-width: 720px) {
+	.wp-block-columns {
+		flex-wrap: wrap !important;
+	}
+	.wp-block-columns > .wp-block-column {
+		flex-basis: 100% !important;
+	}
+}
+
+/* ---- Headline sizing ---- */
+.dv-hero h1 {
+	overflow-wrap: anywhere;
+}
