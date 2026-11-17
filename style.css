@@ -82,6 +82,14 @@ header .wp-block-navigation { margin-left: auto; flex-shrink: 0; }
   .wp-block-column { flex-basis: 100% !important; }
   p.has-large-font-size, p.has-x-large-font-size { line-height: 1.4 !important; }
 }
+/* Side margins: full-width sections keep their background edge to edge, but their text never touches the screen edge. */
+.wp-site-blocks .alignfull:not(.wp-block-cover):not(.wp-block-image):not(.lucas-header):not(.has-global-padding),
+.wp-site-blocks > footer > .wp-block-group:not(.has-global-padding) {
+  padding-left: clamp(20px, 5vw, 48px) !important;
+  padding-right: clamp(20px, 5vw, 48px) !important;
+  box-sizing: border-box;
+}
+.wp-block-cover .wp-block-cover__inner-container { padding-left: clamp(4px, 2vw, 16px); padding-right: clamp(4px, 2vw, 16px); box-sizing: border-box; }
 
 /* ---- Standard header and phone menu (added by Lucas) ---- */
 .lucas-header { background: #7a2e2a; color: #fdf3e4; padding: 14px clamp(16px, 4vw, 40px) !important; gap: 16px; align-items: center; margin: 0 !important; }
@@ -90,7 +98,8 @@ header .wp-block-navigation { margin-left: auto; flex-shrink: 0; }
 .lucas-nav { color: #fdf3e4; gap: clamp(14px, 2.5vw, 28px); }
 .lucas-nav .wp-block-navigation-item__content { color: inherit !important; text-decoration: none; }
 .lucas-nav .wp-block-navigation-item__content:hover { text-decoration: underline; text-underline-offset: 4px; }
-.lucas-nav .wp-block-navigation__responsive-container-open { color: #fdf3e4; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+.lucas-nav .wp-block-navigation__responsive-container-open { color: #fdf3e4; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+@media (max-width: 599px) { .lucas-nav .wp-block-navigation__responsive-container-open { display: inline-flex; } }
 .lucas-nav .wp-block-navigation__responsive-container.is-menu-open { background: #7a2e2a !important; color: #fdf3e4 !important; padding: 20px 24px 32px !important; left: 0 !important; right: 0 !important; width: 100% !important; box-sizing: border-box; }
 .lucas-nav .is-menu-open .wp-block-navigation__responsive-container-close { top: 18px; right: 18px; color: #fdf3e4; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 .lucas-nav .is-menu-open .wp-block-navigation__responsive-container-content,
