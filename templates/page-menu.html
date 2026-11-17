@@ -1,140 +1,187 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","bottom":"20px","left":"30px","right":"30px"}}},"backgroundColor":"cream","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-cream-background-color has-background" style="padding-top:60px;padding-right:30px;padding-bottom:20px;padding-left:30px">
-	<!-- wp:paragraph {"className":"badge-stripe","fontSize":"small","textColor":"guava"} -->
-	<p class="badge-stripe has-guava-color has-text-color has-small-font-size">Fresh Daily</p>
-	<!-- /wp:paragraph -->
-	<!-- wp:heading {"level":1,"fontFamily":"heading","fontSize":"xx-large"} -->
-	<h1 class="wp-block-heading has-heading-font-family has-xx-large-font-size">Our Menu</h1>
-	<!-- /wp:heading -->
-	<!-- wp:paragraph {"fontSize":"large"} -->
-	<p class="has-large-font-size">A taste of Little Havana, baked fresh every day.</p>
-	<!-- /wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)">
+
+<!-- wp:heading {"level":1,"textAlign":"center"} -->
+<h1 class="wp-block-heading has-text-align-center">Our Menu</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Everything is baked fresh in-house, daily. Ask about seasonal flavors when you visit.</p>
+<!-- /wp:paragraph -->
+
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"20px","bottom":"20px","left":"30px","right":"30px"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-base-background-color has-background" style="padding-top:20px;padding-right:30px;padding-bottom:20px;padding-left:30px">
-	<!-- wp:heading {"level":2,"fontFamily":"heading","textColor":"caramel"} -->
-	<h2 class="wp-block-heading has-caramel-color has-text-color has-heading-font-family">Pastries</h2>
-	<!-- /wp:heading -->
+<!-- wp:group {"backgroundColor":"cream","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-cream-background-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 
-	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"1.75rem"}}}} -->
-	<div class="wp-block-columns">
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"className":"menu-item-card","backgroundColor":"cream","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group menu-item-card has-cream-background-color has-background">
-				<!-- wp:heading {"level":3,"fontFamily":"heading"} -->
-				<h3 class="wp-block-heading has-heading-font-family">Pastelitos de Guayaba</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Flaky pastry filled with sweet guava paste.</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Pastelitos &amp; Pastries</h2>
+<!-- /wp:heading -->
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"className":"menu-item-card","backgroundColor":"cream","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group menu-item-card has-cream-background-color has-background">
-				<!-- wp:heading {"level":3,"fontFamily":"heading"} -->
-				<h3 class="wp-block-heading has-heading-font-family">Pastelitos de Queso</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Creamy cheese pastries, a Cuban classic.</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+<!-- wp:columns -->
+<div class="wp-block-columns">
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"className":"menu-item-card","backgroundColor":"cream","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group menu-item-card has-cream-background-color has-background">
-				<!-- wp:heading {"level":3,"fontFamily":"heading"} -->
-				<h3 class="wp-block-heading has-heading-font-family">Croquetas de Jamón</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Crispy breaded ham croquettes, made fresh in-house.</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
-	</div>
-	<!-- /wp:columns -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"className":"menu-item-card","backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group menu-item-card has-base-background-color has-background">
+<!-- wp:paragraph {"className":"tag-pill"} -->
+<p class="tag-pill">Classic</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Pastelito de Guayaba</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Flaky puff pastry filled with sweet guava paste, baked golden every morning.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
 
-	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"1.75rem"},"margin":{"top":"30px"}}}} -->
-	<div class="wp-block-columns" style="margin-top:30px">
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"className":"menu-item-card","backgroundColor":"cream","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group menu-item-card has-cream-background-color has-background">
-				<!-- wp:heading {"level":3,"fontFamily":"heading"} -->
-				<h3 class="wp-block-heading has-heading-font-family">Pan Cubano</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Traditional Cuban bread, baked fresh every morning.</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"className":"menu-item-card","backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group menu-item-card has-base-background-color has-background">
+<!-- wp:paragraph {"className":"tag-pill"} -->
+<p class="tag-pill">Favorite</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Guava &amp; Cheese Pastelito</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Our most-loved combination — sweet guava paired with creamy cheese filling.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"className":"menu-item-card","backgroundColor":"cream","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group menu-item-card has-cream-background-color has-background">
-				<!-- wp:heading {"level":3,"fontFamily":"heading"} -->
-				<h3 class="wp-block-heading has-heading-font-family">Empanadas</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Savory hand pies filled with seasoned beef or chicken.</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"className":"menu-item-card","backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group menu-item-card has-base-background-color has-background">
+<!-- wp:paragraph {"className":"tag-pill"} -->
+<p class="tag-pill">Savory</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Ham &amp; Cheese Pastelito</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>A savory twist on our classic pastry, perfect for breakfast on the go.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"className":"menu-item-card","backgroundColor":"cream","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group menu-item-card has-cream-background-color has-background">
-				<!-- wp:heading {"level":3,"fontFamily":"heading"} -->
-				<h3 class="wp-block-heading has-heading-font-family">Cortadito</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph -->
-				<p>Sweet Cuban espresso, the perfect pairing for any pastry.</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
-	</div>
-	<!-- /wp:columns -->
+</div>
+<!-- /wp:columns -->
+
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"50px","bottom":"60px","left":"30px","right":"30px"}}},"backgroundColor":"guava","textColor":"base","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-base-color has-guava-background-color has-text-color has-background" style="padding-top:50px;padding-right:30px;padding-bottom:60px;padding-left:30px">
-	<!-- wp:heading {"level":2,"fontFamily":"heading","textAlign":"center","textColor":"base"} -->
-	<h2 class="wp-block-heading has-text-align-center has-base-color has-text-color has-heading-font-family">Custom Celebration Cakes</h2>
-	<!-- /wp:heading -->
-	<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"25px"}}}} -->
-	<p class="has-text-align-center" style="margin-bottom:25px">Birthdays, quinces, weddings and more — custom made to order. Call ahead so we can build your cake with care.</p>
-	<!-- /wp:paragraph -->
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-	<div class="wp-block-buttons">
-		<!-- wp:button {"backgroundColor":"base","textColor":"guava"} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-guava-color has-base-background-color has-text-color has-background wp-element-button" href="tel:3055550142">Call to Order Your Cake</a></div>
-		<!-- /wp:button -->
-	</div>
-	<!-- /wp:buttons -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Savory Favorites</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns">
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"className":"menu-item-card"} -->
+<div class="wp-block-group menu-item-card">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Ham Croquetas</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Crispy breaded croquetas with a creamy, savory ham filling — a Cuban staple.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"className":"menu-item-card"} -->
+<div class="wp-block-group menu-item-card">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Chicken Croquetas</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Tender shredded chicken folded into a golden, crispy croqueta.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"className":"menu-item-card"} -->
+<div class="wp-block-group menu-item-card">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Cuban Bread</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Baked fresh daily — crackly crust outside, soft and light inside.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"backgroundColor":"cream","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-cream-background-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)">
+
+<!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center">
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Custom Celebration Cakes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Birthdays, quinceañeras, weddings, and every occasion in between — our cakes are made to order and designed around your celebration. Call ahead to discuss flavors and design.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:13055550142">Call to Order</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center">
+<!-- wp:image {"sizeSlug":"large","className":"is-style-default"} -->
+<figure class="wp-block-image size-large is-style-default"><img src="%%THEME_URI%%/assets/images/cake.jpg" alt="Custom celebration cake with pastel buttercream flowers"/></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+
 </div>
 <!-- /wp:group -->
 

@@ -20,6 +20,28 @@ function wordpress_site_for_dulce_vida_bakery_0000_editor_styles() {
 }
 add_action( 'after_setup_theme', 'wordpress_site_for_dulce_vida_bakery_0000_editor_styles' );
 
+// The photos ship inside the theme (assets/images). Templates point at them with
+// %%THEME_URI%%, filled in here so they work whatever the theme folder is called.
+function wordpress_site_for_dulce_vida_bakery_0000_theme_uri( $content ) {
+    return str_replace( '%%THEME_URI%%', get_stylesheet_directory_uri(), $content );
+}
+function wordpress_site_for_dulce_vida_bakery_0000_fix_templates( $templates ) {
+    foreach ( (array) $templates as $template ) {
+        if ( is_object( $template ) && isset( $template->content ) ) {
+            $template->content = wordpress_site_for_dulce_vida_bakery_0000_theme_uri( $template->content );
+        }
+    }
+    return $templates;
+}
+add_filter( 'get_block_templates', 'wordpress_site_for_dulce_vida_bakery_0000_fix_templates' );
+add_filter( 'get_block_file_template', function ( $template ) {
+    if ( is_object( $template ) && isset( $template->content ) ) {
+        $template->content = wordpress_site_for_dulce_vida_bakery_0000_theme_uri( $template->content );
+    }
+    return $template;
+} );
+add_filter( 'render_block', 'wordpress_site_for_dulce_vida_bakery_0000_theme_uri' );
+
 // Create the site's pages the first time the theme runs. Each page uses its own
 // design from templates/page-<slug>.html; the owner can edit it in Site Editor.
 function wordpress_site_for_dulce_vida_bakery_0000_create_pages() {

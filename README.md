@@ -1,6 +1,10 @@
 # WordPress site for Dulce Vida Bakery
 
 
+## Photos
+
+The photos are AI-made placeholders in your site's style (in the theme's assets/images folder). To use your own, open a page in Appearance > Editor, click a photo and choose Replace.
+
 ---
 
 ## Preview and install

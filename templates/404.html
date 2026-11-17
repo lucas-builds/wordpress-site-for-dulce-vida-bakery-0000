@@ -1,20 +1,24 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"80px","left":"30px","right":"30px"}}},"backgroundColor":"cream","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-cream-background-color has-background" style="padding-top:80px;padding-right:30px;padding-bottom:80px;padding-left:30px">
-	<!-- wp:heading {"level":1,"textAlign":"center","fontFamily":"heading","fontSize":"xx-large"} -->
-	<h1 class="wp-block-heading has-text-align-center has-heading-font-family has-xx-large-font-size">Página no encontrada</h1>
-	<!-- /wp:heading -->
-	<!-- wp:paragraph {"align":"center","fontSize":"large","style":{"spacing":{"margin":{"bottom":"30px"}}}} -->
-	<p class="has-text-align-center has-large-font-size" style="margin-bottom:30px">We couldn't find that page — but we've always got fresh pastelitos waiting.</p>
-	<!-- /wp:paragraph -->
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-	<div class="wp-block-buttons">
-		<!-- wp:button {"backgroundColor":"guava","textColor":"base"} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-base-color has-guava-background-color has-text-color has-background wp-element-button" href="/">Back to Home</a></div>
-		<!-- /wp:button -->
-	</div>
-	<!-- /wp:buttons -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+
+<!-- wp:heading {"level":1,"textAlign":"center"} -->
+<h1 class="wp-block-heading has-text-align-center">Page Not Found</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Looks like this page doesn't exist. Maybe you were craving a pastelito?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">Back to Home</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+
 </div>
 <!-- /wp:group -->
 

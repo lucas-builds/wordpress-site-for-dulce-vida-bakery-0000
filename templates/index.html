@@ -1,30 +1,24 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"50px","bottom":"60px","left":"30px","right":"30px"}}},"backgroundColor":"cream","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-cream-background-color has-background" style="padding-top:50px;padding-right:30px;padding-bottom:60px;padding-left:30px">
-	<!-- wp:heading {"level":1,"fontFamily":"heading"} -->
-	<h1 class="wp-block-heading has-heading-font-family">From the Bakery</h1>
-	<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
-	<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"style":{"spacing":{"margin":{"top":"30px"}}}} -->
-	<div class="wp-block-query" style="margin-top:30px">
-		<!-- wp:post-template -->
-			<!-- wp:group {"className":"menu-item-card","backgroundColor":"base","style":{"spacing":{"margin":{"bottom":"20px"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group menu-item-card has-base-background-color has-background" style="margin-bottom:20px">
-				<!-- wp:post-title {"level":2,"fontFamily":"heading","isLink":true} /-->
-				<!-- wp:post-date {"fontSize":"small"} /-->
-				<!-- wp:post-excerpt /-->
-			</div>
-			<!-- /wp:group -->
-		<!-- /wp:post-template -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">From the Bakery</h1>
+<!-- /wp:heading -->
 
-		<!-- wp:query-pagination -->
-		<!-- wp:query-pagination-previous /-->
-		<!-- wp:query-pagination-numbers /-->
-		<!-- wp:query-pagination-next /-->
-		<!-- /wp:query-pagination -->
-	</div>
-	<!-- /wp:query -->
+<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"},"layout":{"type":"default"}} -->
+<div class="wp-block-query">
+<!-- wp:post-template -->
+<!-- wp:post-title {"isLink":true} /-->
+<!-- wp:post-excerpt /-->
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+<!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
+
 </div>
 <!-- /wp:group -->
 
